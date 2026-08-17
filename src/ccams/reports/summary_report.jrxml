@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports 
+              http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="summary_report" pageWidth="595" pageHeight="842" 
+              columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+    
+    <parameter name="clinicName" class="java.lang.String"/>
+    <parameter name="reportTitle" class="java.lang.String"/>
+    <parameter name="generatedBy" class="java.lang.String"/>
+    <parameter name="generatedAt" class="java.lang.String"/>
+    <parameter name="totalAppointments" class="java.lang.Integer"/>
+    <parameter name="pending" class="java.lang.Integer"/>
+    <parameter name="approved" class="java.lang.Integer"/>
+    <parameter name="completed" class="java.lang.Integer"/>
+    <parameter name="cancelled" class="java.lang.Integer"/>
+    <parameter name="totalStudents" class="java.lang.Integer"/>
+    <parameter name="totalStaff" class="java.lang.Integer"/>
+    <parameter name="totalNurses" class="java.lang.Integer"/>
+    <parameter name="totalPsychologists" class="java.lang.Integer"/>
+    
+    <title>
+        <band height="100">
+            <staticText>
+                <reportElement x="0" y="20" width="555" height="30"/>
+                <textElement textAlignment="Center">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[CCAMS - Summary Report]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="55" width="555" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Campus Clinic Appointment Management System]]></text>
+            </staticText>
+        </band>
+    </title>
+    
+    <summary>
+        <band height="400">
+            <staticText>
+                <reportElement x="20" y="20" width="200" height="25"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Appointment Statistics]]></text>
+            </staticText>
+            
+            <line>
+                <reportElement x="20" y="50" width="515" height="1"/>
+            </line>
+            
+            <staticText>
+                <reportElement x="40" y="70" width="200" height="25"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[Total Appointments:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="70" width="100" height="25"/>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{totalAppointments}]]></textFieldExpression>
+            </textField>
+            
+            <staticText>
+                <reportElement x="40" y="100" width="200" height="25"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[Pending:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="100" width="100" height="25"/>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{pending}]]></textFieldExpression>
+            </textField>
+            
+            <staticText>
+                <reportElement x="40" y="130" width="200" height="25"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[Approved:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="130" width="100" height="25"/>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{approved}]]></textFieldExpression>
+            </textField>
+            
+            <staticText>
+                <reportElement x="40" y="160" width="200" height="25"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[Completed:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="160" width="100" height="25"/>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{completed}]]></textFieldExpression>
+            </textField>
+            
+            <staticText>
+                <reportElement x="40" y="190" width="200" height="25"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[Cancelled:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="190" width="100" height="25"/>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{cancelled}]]></textFieldExpression>
+            </textField>
+            
+            <line>
+                <reportElement x="20" y="230" width="515" height="1"/>
+            </line>
+            
+            <staticText>
+                <reportElement x="20" y="250" width="200" height="25"/>
+                <textElement>
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[People Statistics]]></text>
+            </staticText>
+            
+            <line>
+                <reportElement x="20" y="280" width="515" height="1"/>
+            </line>
+            
+            <staticText>
+                <reportElement x="40" y="300" width="200" height="25"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[Total Students:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="300" width="100" height="25"/>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{totalStudents}]]></textFieldExpression>
+            </textField>
+            
+            <staticText>
+                <reportElement x="40" y="330" width="200" height="25"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[Total Staff:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="330" width="100" height="25"/>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{totalStaff}]]></textFieldExpression>
+            </textField>
+            
+            <staticText>
+                <reportElement x="60" y="360" width="180" height="25"/>
+                <textElement>
+                    <font size="11"/>
+                </textElement>
+                <text><![CDATA[Nurses:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="360" width="100" height="25"/>
+                <textElement>
+                    <font size="11"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{totalNurses}]]></textFieldExpression>
+            </textField>
+            
+            <staticText>
+                <reportElement x="60" y="385" width="180" height="25"/>
+                <textElement>
+                    <font size="11"/>
+                </textElement>
+                <text><![CDATA[Psychologists:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="300" y="385" width="100" height="25"/>
+                <textElement>
+                    <font size="11"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{totalPsychologists}]]></textFieldExpression>
+            </textField>
+        </band>
+    </summary>
+</jasperReport>

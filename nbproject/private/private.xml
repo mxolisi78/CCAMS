@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/reports/staff_report.jrxml</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/ReportModel.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/dao/AppointmentDAO.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/ReportsView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/services/SettingsService.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/services/ReportService.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/constants/AppColors.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/Appointment.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/constants/AppConstants.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/ReportData.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/IconLoader.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/JasperReportView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/Student.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/ButtonIconHelper.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/User.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/StudentManagementView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/SettingsView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/IconManager.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/dao/StudentDAO.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/auth/LoginForm.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/reports/appointment_summary_report.jrxml</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/CCAMS.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/dao/ScheduleDAO.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/PasswordUtil.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/services/EmailService.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/ValidationUtil.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/Settings.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/database/DatabaseConnection.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/DashboardView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/IconHelper.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/StaffManagementView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/Staff.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/ScheduleManagementView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/reports/student_report.jrxml</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/constants/AppIcons.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/IconGenerator.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/reports/summary_report.jrxml</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/dao/UserDAO.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/GenerateIcons.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/views/AppointmentManagementView.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/utils/ThemeManager.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/dao/StaffDAO.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/ResetPassword.java</file>
+            <file>file:/C:/Users/Admin/OneDrive%20-%20Sol%20Plaatje%20University/Documents/NetBeansProjects/CCAMS/src/ccams/models/Schedule.java</file>
+        </group>
+    </open-files>
+</project-private>
