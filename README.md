@@ -10,10 +10,9 @@
 [![License](https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)]()
 
-<!-- Description -->
 **A comprehensive desktop application developed for Sol Plaatje University to automate the clinic appointment booking process, replacing the manual email-based system.**
 
-[Features](#-key-features) · [Installation](#-installation) · [Usage](#-usage) · [Screenshots](#-screenshots) · [Documentation](#-documentation) · [Contact](#-contact)
+[Features](#-key-features) · [Installation](#-installation) · [Screenshots](#-screenshots) · [Documentation](#-documentation)
 
 </div>
 
@@ -21,7 +20,7 @@
 
 ## 📖 About The Project
 
-**CCAMS** (Campus Clinic Appointment Management System) is a Java Swing desktop application that streamlines the entire appointment management process for university clinics. It eliminates the inefficiencies of manual email-based booking by providing:
+**CCAMS (Campus Clinic Appointment Management System)** is a Java Swing desktop application that streamlines the entire appointment management process for university clinics. It eliminates the inefficiencies of manual email-based booking by providing:
 
 <table>
 <tr>
@@ -38,10 +37,10 @@
 <td width="50%">
 
 ### 💡 Key Benefits
-- ⚡ **Faster** appointment scheduling
+- ⚡ **Faster** scheduling
 - 📊 **Better** clinic analytics
 - 🔒 **Secure** role-based access
-- 📱 **Modern** user interface
+- 📱 **Modern** UI
 - 📈 **Scalable** architecture
 
 </td>
@@ -58,7 +57,7 @@
 
 ### 🔐 Authentication
 - Login with username, student number, or email
-- Role-based access control (Admin, Nurse, Psychologist, Student)
+- Role-based access control
 - SHA-256 password hashing
 - Show/Hide password toggle
 - Placeholder field guidance
@@ -105,6 +104,64 @@
 
 ---
 
+## 📸 Screenshots
+
+### 🔐 Login Screen
+<img src="screenshots/login.png" alt="Login Screen" width="800"/>
+
+*Modern login interface with SPU campus background, role-based authentication, and password visibility toggle.*
+
+---
+
+### 📊 Dashboard
+<img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
+
+*Real-time statistics, appointment status distribution (pie chart), and weekly appointment trends (bar chart).*
+
+---
+
+### 👨‍🎓 Student Management
+<img src="screenshots/students.png" alt="Student Management" width="800"/>
+
+*Complete student management with search, add, edit, and delete functionality.*
+
+---
+
+### 👨‍⚕️ Staff Management
+<img src="screenshots/staff.png" alt="Staff Management" width="800"/>
+
+*Manage nurses and psychologists with profession filtering and search.*
+
+---
+
+### 📅 Appointment Management
+<img src="screenshots/appointments.png" alt="Appointment Management" width="800"/>
+
+*Book, approve, complete, cancel, and reschedule appointments with an interactive date picker.*
+
+---
+
+### 🕐 Schedule Management
+<img src="screenshots/schedules.png" alt="Schedule Management" width="800"/>
+
+*Manage staff availability with date picker and staff filtering.*
+
+---
+
+### 📊 Reports
+<img src="screenshots/reports.png" alt="Reports" width="800"/>
+
+*Generate 7 report types: Summary, Appointment, Weekly, Monthly, Annual, Student, and Staff.*
+
+---
+
+### ⚙️ Settings
+<img src="screenshots/settings.png" alt="Settings" width="800"/>
+
+*Configure clinic information, appointment settings, notifications, and security.*
+
+---
+
 ## 🛠️ Built With
 
 <div align="center">
@@ -124,35 +181,8 @@
 
 ---
 
-## 🏗️ Architecture
-
-┌─────────────────────────────────────────────────────────────┐
-│ PRESENTATION LAYER │
-│ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ │
-│ │ Dashboard│ │ Students │ │ Staff │ │Appointments│ │
-│ └──────────┘ └──────────┘ └──────────┘ └──────────┘ │
-├─────────────────────────────────────────────────────────────┤
-│ BUSINESS LAYER │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
-│ │ ReportServ. │ │ SettingsServ.│ │ Controllers │ │
-│ └──────────────┘ └──────────────┘ └──────────────┘ │
-├─────────────────────────────────────────────────────────────┤
-│ DATA ACCESS LAYER │
-│ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ │
-│ │ UserDAO │ │StudentDAO│ │ StaffDAO │ │AppointmentDAO│ │
-│ └──────────┘ └──────────┘ └──────────┘ └──────────┘ │
-├─────────────────────────────────────────────────────────────┤
-│ DATABASE LAYER │
-│ ┌────────────────────────────┐ │
-│ │ MySQL Database │ │
-│ └────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
-
-text
-
----
-
 ## 📁 Project Structure
+
 CCAMS/
 ├── 📂 src/
 │ └── 📂 ccams/
@@ -169,12 +199,11 @@ CCAMS/
 │ └── 📂 images/ # Images & assets
 ├── 📂 lib/ # External libraries
 ├── 📂 reports/ # JasperReports templates
-├── 📂 config/ # Configuration files
+├── 📂 screenshots/ # Application screenshots
 ├── 📂 docs/ # Documentation
 ├── 📄 README.md
 └── 📄 LICENSE
 
-text
 
 ---
 
@@ -210,18 +239,9 @@ cd CCAMS
 
 # 5. Run the application
 # Right-click CCAMS.java → Run File
+
 🔑 Default Credentials
 <table align="center"> <tr> <th>Role</th> <th>Username</th> <th>Password</th> </tr> <tr> <td>👑 Administrator</td> <td><code>admin</code></td> <td><code>admin123</code></td> </tr> <tr> <td>👨‍⚕️ Nurse</td> <td><code>andile.ncube</code></td> <td><code>password123</code></td> </tr> <tr> <td>🧠 Psychologist</td> <td><code>samke.zondo</code></td> <td><code>password123</code></td> </tr> <tr> <td>👨‍🎓 Student</td> <td><code>202423101</code></td> <td><code>password123</code></td> </tr> </table>
-📸 Screenshots
-<div align="center">
-🔐 Login Screen
-<img src="screenshots/login.png" alt="Login Screen" width="600"/>
-📊 Dashboard
-<img src="screenshots/dashboard.png" alt="Dashboard" width="600"/>
-👨‍🎓 Student Management
-<img src="screenshots/students.png" alt="Student Management" width="600"/>
-📅 Appointment Management
-<img src="screenshots/appointments.png" alt="Appointment Management" width="600"/></div>
 📊 Reports Available
 #	Report Type	Description
 1	📈 Summary Report	Complete clinic statistics overview
@@ -249,21 +269,9 @@ cd CCAMS
 □ PDF export
 □ Excel export
 □ Audit logging
-</td> </tr> <tr> <td>
-📅 Planned
-□ Mobile app integration
-□ Online booking portal
-□ Calendar view
-□ Dark mode toggle
-</td> <td>
-💡 Future Ideas
-□ AI-powered scheduling
-□ Video consultations
-□ Digital prescriptions
-□ Integration with university systems
 </td> </tr> </table>
 🤝 Contributing
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+Contributions are welcome! Please follow these steps:
 
 Fork the Project
 
@@ -278,21 +286,12 @@ Open a Pull Request
 📄 License
 Distributed under the MIT License. See LICENSE for more information.
 
-text
-MIT License
-
-Copyright (c) 2024 Sol Plaatje University
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
 📧 Contact
 <div align="center">
 Mxolisi Mtshali
 
 https://img.shields.io/badge/GitHub-Mxolisi78-181717?style=for-the-badge&logo=github
 https://img.shields.io/badge/Email-ismailmxolisi78@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white
-https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin
 
 Project Link: https://github.com/Mxolisi78/CCAMS
 
@@ -333,3 +332,57 @@ Made with ❤️ for Sol Plaatje University
 © 2024 CCAMS - Campus Clinic Appointment Management System
 
 </div> ```
+🚀 STEP 4: Push to GitHub
+In NetBeans:
+Right-click project → Git → Add
+
+Right-click → Git → Commit
+
+Message: Added screenshots and updated README
+
+Click Commit
+
+Right-click → Git → Remote → Push
+
+Or Command Line:
+
+cd "C:\Users\Admin\OneDrive - Sol Plaatje University\Documents\NetBeansProjects\CCAMS"
+
+git add screenshots/ README.md
+git commit -m "Added screenshots and updated README"
+git push
+
+🎯 What the Updated README Will Show
+Before
+Plain text README
+
+No screenshots
+
+Basic formatting
+
+After
+🎨 Animated gradient banner
+
+🏅 Multiple badges (Java, MySQL, License)
+
+📸 8 full-width screenshots with descriptions
+
+📋 Beautiful table layouts
+
+🗺️ Roadmap with checkboxes
+
+💌 Social media contact badges
+
+🎨 Animated footer
+
+📋 Checklist
+Step	Action	Status
+1	Create screenshots/ folder	⬜
+2	Take all 8 screenshots	⬜
+3	Save each with correct filename	⬜
+4	Replace README.md with new version	⬜
+5	Add screenshots to Git	⬜
+6	Commit and push	⬜
+7	Verify on GitHub	⬜
+
+
