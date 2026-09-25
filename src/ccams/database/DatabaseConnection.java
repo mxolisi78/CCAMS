@@ -1,60 +1,58 @@
-package database;
+package ccams.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-
-    private static final String URL = 
-        "jdbc:mysql://localhost:3306/taste_haven_rms?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-    
-    private static final String USER = "root";
-    private static final String PASSWORD = "Mxolisi@78"; // CHANGE THIS TO YOUR MYSQL PASSWORD
+    // ============================================================
+    // UPDATE THESE WITH YOUR MySQL CREDENTIALS
+    // ============================================================
+    private static final String URL = "jdbc:mysql://localhost:3306/ccams?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "Mxolisi@78"; // ← Change this!
     
     private static Connection connection = null;
     
-    private DatabaseConnection() {}
-    
-    public static Connection getConnection() throws SQLException {
-        if (connection == null || connection.isClosed()) {
-            try {
-                // Load MySQL JDBC Driver
+    public static synchronized Connection getConnection() {
+        try {
+            if (connection == null || connection.isClosed()) {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                connection = DriverManager.getConnection(URL, USER, PASSWORD);
+                connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
                 System.out.println("✅ Database connected successfully!");
-            } catch (ClassNotFoundException e) {
-                System.err.println("❌ MySQL JDBC Driver not found!");
-                System.err.println("Please add mysql-connector-j-*.jar to your project libraries.");
-                throw new SQLException("Driver not found", e);
-            } catch (SQLException e) {
-                System.err.println("❌ Database connection failed: " + e.getMessage());
-                throw e;
             }
+            return connection;
+        } catch (ClassNotFoundException e) {
+            System.err.println("✗ MySQL Driver not found!");
+            e.printStackTrace();
+            return null;
+        } catch (SQLException e) {
+            System.err.println("✗ Database connection failed: " + e.getMessage());
+            e.printStackTrace();
+            return null;
         }
-        return connection;
     }
     
     public static void closeConnection() {
         if (connection != null) {
             try {
-                connection.close();
+                if (!connection.isClosed()) {
+                    connection.close();
+                }
                 connection = null;
-                System.out.println("✅ Database connection closed.");
+                System.out.println("Database connection closed.");
             } catch (SQLException e) {
-                System.err.println("❌ Error closing connection: " + e.getMessage());
+                System.err.println("Error closing connection: " + e.getMessage());
             }
         }
     }
     
-    // Test method - run this to verify connection
-    public static void main(String[] args) {
+    public static boolean testConnection() {
         try {
             Connection conn = getConnection();
-            System.out.println("✅ Connection successful!");
-            closeConnection();
+            return conn != null && !conn.isClosed();
         } catch (SQLException e) {
-            System.err.println("❌ Connection failed: " + e.getMessage());
+            return false;
         }
     }
 }

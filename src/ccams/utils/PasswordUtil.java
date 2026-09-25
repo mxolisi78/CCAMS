@@ -40,18 +40,14 @@ public class PasswordUtil {
     /**
      * Verify plain password against stored SHA-256 hash.
      */
-    public static boolean verifyPassword(
-            String plainPassword,
-            String storedHash) {
-
-        if (plainPassword == null || storedHash == null) {
-            return false;
-        }
-
-        String hashedPassword = hashPassword(plainPassword);
-
-        return hashedPassword.equalsIgnoreCase(storedHash.trim());
+   public static boolean verifyPassword(String plainPassword, String storedHash) {
+    if (plainPassword == null || storedHash == null) {
+        return false;
     }
+
+    String hashedPassword = hashPassword(plainPassword);
+    return hashedPassword.equalsIgnoreCase(storedHash.trim());
+}
 
     /**
      * Check whether a value looks like a SHA-256 hash.

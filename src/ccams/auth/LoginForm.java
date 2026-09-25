@@ -229,6 +229,7 @@ public class LoginForm extends JFrame {
             welcomeLabel = new JLabel("👋 Welcome Back!");
         }
         welcomeLabel.setHorizontalTextPosition(SwingConstants.RIGHT);
+        
         welcomeLabel.setFont(new Font("Segoe UI", Font.BOLD, 26));
         welcomeLabel.setForeground(ThemeManager.PRIMARY);
         gbc.gridx = 0;
